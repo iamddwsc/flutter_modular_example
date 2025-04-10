@@ -11,6 +11,13 @@ dependencies:
     sdk: flutter
   go_router: ^14.8.1
 
+  flutter_module1:
+    path: modules/module1
+  flutter_module2:
+    path: modules/module2
+  persistent_bottom_nav_bar: ^6.2.1
+
+
 dev_dependencies:
   flutter_test:
     sdk: flutter
