@@ -4,3 +4,6 @@
 [submodule "modules/module2"]
 	path = modules/module2
 	url = https://github.com/iamddwsc/flutter_module2.git
+[submodule "modules/shared"]
+	path = modules/shared
+	url = https://github.com/iamddwsc/flutter_module3_shared

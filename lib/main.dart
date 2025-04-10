@@ -2,9 +2,12 @@ import 'package:flutter/material.dart';
 import 'package:flutter_modular_example/scaffold_with_navbar.dart';
 import 'package:flutter_module1/screen_1.dart';
 import 'package:flutter_module2/screen_2.dart';
+import 'package:flutter_module3_shared/shared_communicator.dart';
+import 'package:flutter_module3_shared/shared_object.dart';
 import 'package:go_router/go_router.dart';
 
 void main() {
+  initializeSharedCommunication();
   runApp(MainApp());
 }
 
@@ -51,4 +54,13 @@ class MainApp extends StatelessWidget {
       routerConfig: goRouter,
     );
   }
+}
+
+void initializeSharedCommunication() {
+  final communicator = SharedCommunicator();
+
+  // Register shared objects
+  communicator.register('theme', SharedObject<ThemeData>());
+  communicator.register('uiState', SharedUIState());
+  communicator.register('messages', SharedMessage());
 }

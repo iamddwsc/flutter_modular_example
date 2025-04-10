@@ -15,8 +15,14 @@ dependencies:
     path: modules/module1
   flutter_module2:
     path: modules/module2
+  flutter_module3_shared:
+    path: modules/shared
+
   persistent_bottom_nav_bar: ^6.2.1
 
+dependency_overrides:
+  flutter_module3_shared:
+    path: modules/shared
 
 dev_dependencies:
   flutter_test:

@@ -84,6 +84,13 @@ packages:
       relative: true
     source: path
     version: "1.0.0+1"
+  flutter_module3_shared:
+    dependency: "direct main"
+    description:
+      path: "modules/shared"
+      relative: true
+    source: path
+    version: "1.0.0+1"
   flutter_test:
     dependency: "direct dev"
     description: flutter
